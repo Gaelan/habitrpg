@@ -58,9 +58,9 @@ module.exports = function(grunt) {
       build: {
         files: [
           {expand: true, cwd: 'public/', src: 'favicon.ico', dest: 'build/'},
-          {expand: true, cwd: 'public/', src: 'bower_components/habitrpg-shared/dist/spritesmith.png', dest: 'build/'},
-          {expand: true, cwd: 'public/', src: 'bower_components/habitrpg-shared/img/sprites/backer-only/*.gif', dest: 'build/'},
-          {expand: true, cwd: 'public/', src: 'bower_components/habitrpg-shared/img/sprites/npc_ian.gif', dest: 'build/'},
+          {expand: true, cwd: 'public/', src: 'habitrpg-shared/dist/spritesmith.png', dest: 'build/'},
+          {expand: true, cwd: 'public/', src: 'habitrpg-shared/img/sprites/backer-only/*.gif', dest: 'build/'},
+          {expand: true, cwd: 'public/', src: 'habitrpg-shared/img/sprites/npc_ian.gif', dest: 'build/'},
           {expand: true, cwd: 'public/', src: 'bower_components/bootstrap/dist/fonts/*', dest: 'build/'}
         ]
       }
@@ -74,16 +74,16 @@ module.exports = function(grunt) {
         },
         src: [
           'build/*.js', 'build/*.css', 'build/favicon.ico',
-          'build/bower_components/habitrpg-shared/dist/*.png',
-          'build/bower_components/habitrpg-shared/img/sprites/backer-only/*.gif',
-          'build/bower_components/habitrpg-shared/img/sprites/npc_ian.gif',
+          'build/habitrpg-shared/dist/*.png',
+          'build/habitrpg-shared/img/sprites/backer-only/*.gif',
+          'build/habitrpg-shared/img/sprites/npc_ian.gif',
           'build/bower_components/bootstrap/dist/fonts/*'
         ],
         dest: 'build/*.css'
       }
     },
 
-    nodemon: { 
+    nodemon: {
       dev: {
         script: '<%= pkg.main %>'
       }

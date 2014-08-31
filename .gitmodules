@@ -1,0 +1,3 @@
+[submodule "habitrpg-shared"]
+	path = habitrpg-shared
+	url = https://github.com/HabitRPG/habitrpg-shared.git

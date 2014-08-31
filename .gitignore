@@ -1,6 +1,7 @@
 .DS_Store
 public/gen
-node_modules
+node_modules/*
+!node_modules/habitrpg-shared
 *.swp
 .idea*
 config.json
